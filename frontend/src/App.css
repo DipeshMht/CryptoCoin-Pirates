@@ -1,0 +1,137 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(15deg, #877b7b, #eae7e7);
+  color: white;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-color: #9b40fb;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-title {
+  margin: 0;
+}
+
+.news-section,
+.crypto-section,
+.graph-section {
+  margin: 20px 0;
+}
+
+.news-content,
+.crypto-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.crypto-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+  background: rgba(244, 171, 171, 0.5);
+  border-radius: 10px;
+}
+
+.crypto-item {
+ background-color: #d677e7;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  min-width: 200px;
+  box-sizing: border-box;
+}
+
+.crypto-item h4 {
+  margin-top: 0;
+}
+
+.news-item {
+  background-color: #b18c8c;
+  border: 2px solid #f6efef;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.news-item h3 {
+  margin-top: 0;
+}
+
+.chart-container {
+  background-color: #bdc4b3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+canvas {
+  max-width: 100%;
+}
+
+/* Gradient Background */
+body {
+  background: linear-gradient(15deg, #000000, #333333);
+  background-attachment: fixed;
+}
+
+/* ... Previous CSS Code ... */
+/* ... Previous CSS Code ... */
+
+.crypto-list-container {
+  width: 100%; /* Set the container width */
+  overflow: hidden; /* Hide overflow to create scrolling effect */
+  white-space: nowrap;
+  background: rgba(237, 203, 240, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex; /* Display coins in a row */
+}
+
+.crypto-item {
+  background-color: #71c0c9;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px; /* Add space between coins */
+  min-width: 200px;
+  box-sizing: border-box;
+  display: inline-block;
+  animation: slide 15s linear infinite;
+}
+.chart-container{
+  display: flex;
+  justify-content: center;
+}
+.graph-image img {
+  max-width: 22%;
+  margin-right: 100px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1500px, 0, 0); 
+  }
+}
